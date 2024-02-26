@@ -51,3 +51,5 @@ document
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
+
+// Started with code taken from 28 Student Mini Project in Module 14

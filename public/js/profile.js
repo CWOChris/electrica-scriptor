@@ -45,3 +45,5 @@ document
 document
   .querySelector('.project-list')
   .addEventListener('click', delButtonHandler);
+
+// Started with code taken from 28 Student Mini Project in Module 14
