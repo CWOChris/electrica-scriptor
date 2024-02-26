@@ -11,7 +11,7 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -30,7 +30,7 @@ Project.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'users',
         key: 'id',
       },
     },
