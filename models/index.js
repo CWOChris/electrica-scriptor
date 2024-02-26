@@ -11,3 +11,5 @@ Project.belongsTo(User, {
 });
 
 module.exports = { User, Project };
+
+// Started with code taken from 28 Student Mini Project in Module 14
