@@ -52,7 +52,12 @@ This project is licensed under the MIT license. https://opensource.org/licenses/
 * Input Validation for integrity and to prevent attacks.
 
 ## :muscle: Contributing
-* 
+* 1. Fork Repo
+* 2. Clone the repo with "git clone"
+* 3. Create a branch with "git checkout -b your_branch"
+* 4. Commit your changes with "git commit -m"
+* 5. Push to the branch with "git push origin your_branch"
+* 6. Open a pull request on the original repository.
 
 ## :card_index: Tests
 * 
