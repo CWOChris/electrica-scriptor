@@ -37,12 +37,8 @@ A blog for all things tech related.
 This project is licensed under the MIT license. https://opensource.org/licenses/MIT
 
 ## :name_badge: Badges
-[![Build Status](https://img.shields.io/travis/CWOChris/electrica-scriptor)](https://travis-ci.org/CWOChris/electrica-scriptor)
-[![Code Coverage](https://img.shields.io/codecov/c/github/CWOChris/electrica-scriptor)](https://codecov.io/gh/CWOChris/electrica-scriptor)
 [![License](https://img.shields.io/github/license/CWOChris/electrica-scriptor)](https://github.com/CWOChris/electrica-scriptor/blob/master/LICENSE)
 [![Version](https://img.shields.io/github/package-json/v/CWOChris/electrica-scriptor)](https://github.com/CWOChris/electrica-scriptor/releases)
-[![Dependencies](https://img.shields.io/david/CWOChris/electrica-scriptor)](https://david-dm.org/CWOChris/electrica-scriptor)
-[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/CWOChris/electrica-scriptor)](https://snyk.io/test/github/CWOChris/electrica-scriptor)
 [![Contributors](https://img.shields.io/github/contributors/CWOChris/electrica-scriptor)](https://github.com/CWOChris/electrica-scriptor/graphs/contributors)
 [![Last Commit](https://img.shields.io/github/last-commit/CWOChris/electrica-scriptor)](https://github.com/CWOChris/electrica-scriptor/commits/master)
 
