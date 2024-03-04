@@ -1,4 +1,4 @@
-// This comes from Activity 22 in the MVC module:
+// This comes from Activity 22 in the MVC module with some changes to meet the criteria:
 
 const path = require('path');
 const express = require('express');
