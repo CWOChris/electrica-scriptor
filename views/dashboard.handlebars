@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard - Tech Blog</title>
+        <link rel="stylesheet" href="../public/css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Welcome to Your Dashboard!</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Your Blog Posts</h2>
+                <ul>
+                    {{#each posts}}
+                    <li>
+                        <h3><a href="/post/{{this.id}}">{{this.title}}</a></h3>
+                        <p>{{this.excerpt}}</p>
+                        <p>Published on: {{formatDate this.createdAt}}</p>
+                        <a href="/post/edit/{{this.id}}">Edit</a> | <a href="/post/delete/{{this.id}}">Delete</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </section>
+            <section>
+                <h2>Create New Post!</h2>
+                <form action="/post/create" method="POST">
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title" required><br>
+                    <label for="content">Content:</label><br>
+                    <textarea id="content" name="content" rows="4" required></textarea><br>
+                    <button type="submit">Create Post!</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2024, <a href="https://github.com/CWOChris">CWOChris</a></p>
+        </footer>
+    </body>
+</html>
