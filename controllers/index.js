@@ -3,6 +3,10 @@
 const router = require('express').Router();
 const homeRoutes = require('./homeRoutes');
 
-router.use('/', homeRoutes);
+router.get('/', homeRoutes.homepage);
+// router.get('/login', homeRoutes.login);
+// router.get('/signup', homeRoutes.signup);
+// router.get('/dashboard', homeRoutes.dashboard);
+// router.get('/logout', homeRoutes.logout);
 
 module.exports = router;

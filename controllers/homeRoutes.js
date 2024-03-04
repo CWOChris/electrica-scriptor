@@ -1,24 +1,24 @@
 // This comes from Activity 22 in the MVC module:
 
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, Post, Comment } = require('../models');
 
-router.get('/', async (req, res) => {
-  try {
-    // Get all users, sorted by name
-    const userData = await User.findAll({
-      attributes: { exclude: ['password'] },
-      order: [['name', 'ASC']],
-    });
+const homeController = {
+    getHomePage: async (req, res) => {
+        try {
+            const posts = await Post.findAll({
+                include: [{
+                    model: User,
+                    attributes: ['username']
+                }],
+                order: [['createdAt', 'DESC']]
+            });
+            res.render('homepage', { posts });
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ message: 'Internal Server Error' });
+        }
+    },
+};
 
-    // Serialize user data so templates can read it
-    const users = userData.map((project) => project.get({ plain: true }));
-
-    // Pass serialized data into Handlebars.js template
-    res.render('homepage', { users });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-module.exports = router;
+module.exports = homeController;
