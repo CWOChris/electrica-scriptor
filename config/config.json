@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "root",
+        "password": "",
+        "database": "tech_blog_db",
+        "host": "localhost",
+        "dialect": "mysql",
+        "seederStorage": "sequelize"
+    },
+    "test": {
+        "username": "root",
+        "password": "",
+        "database": "tech_blog_db",
+        "host": "localhost",
+        "dialect": "mysql",
+        "seederStorage": "sequelize"
+    },
+    "production": {
+        "use_env_variable": "JAWSDB_URL",
+        "dialect": "mysql",
+        "seederStorage": "sequelize"
+    }
+}
