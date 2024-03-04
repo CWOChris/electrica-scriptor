@@ -1,7 +1,6 @@
 -- This comes from Activity 22 in the MVC module:
 
-DROP DATABASE IF EXISTS tech_blog_db;
-CREATE DATABASE tech_blog_db;
+CREATE DATABASE IF NOT EXISTS tech_blog_db;
 
 USE tech_blog_db;
 
