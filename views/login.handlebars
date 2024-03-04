@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login - Tech Blog</title>
-        <link rel="stylesheet" href="../public/css/style.css">
-    </head>
-
-    <body>
-        <header>
-            <h1>Login to Your Account!</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/dashboard">Dashboard</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>Login</h2>
-                <form action="/login" method="POST">
-                    <label for="username">Username:</label><br>
-                    <input type="text" name="username" id="username" required><br>
-                    <label for="password">Password:</label><br>
-                    <input type="password" name="password" id="password" required><br>
-                    <button type="submit">Login</button>
-                </form>
-            </section>
-            <section>
-                <p>Don't have an account? <a href="/signup">Sign Up Here</a>!</p>
-            </section>
-        </main>
-        <footer>
-            Copyright &copy; 2024, <a href="https://github.com/CWOChris">CWOChris</a>
-        </footer>
-    </body>
-</html>
+<section>
+    <h1>Login to your account!</h1>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" id="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</section>
+<section>
+    <p>Don't have an account? <a href="/signup">Sign Up Here</a>!</p>
+</section>
