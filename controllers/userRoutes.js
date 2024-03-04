@@ -1,34 +1,8 @@
 const router = require('express').Router();
+const userRoutes = require('./userRoutes');
 
-const createUser = async (req, res) => {
-    try {
-        res.send('User Created Successfully');
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Internal Server Error' });
-    }
-};
-
-const loginUser = async (req, res) => {
-    try {
-        res.send('User Logged in Successfully');
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Internal Server Error' });
-    }
-};
-
-const logoutUser = async (req, res) => {
-    try {
-        res.send('User logged out successfully!');
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Internal Server Error' });
-    }
-};
-
-router.post('/signup', createUser);
-router.post('/login', loginUser);
-router.post('/logout', logoutUser);
+router.post('/', userRoutes.signup);
+router.post('/login', userRoutes.login);
+router.get('/logout', userRoutes.logout);
 
 module.exports = router;
